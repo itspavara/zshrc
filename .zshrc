@@ -4,8 +4,9 @@
 # Enable colors and change prompt:
 autoload -U colors && colors
 setopt PROMPT_SUBST
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%b\$(git_info)%{$reset_color%}$%b "
 
+PROMPT="%B%F{#F92672}╭─%f%b %F{#A6E22E}%n%f%F{#FD971F}@%f%F{#AE81FF}%m%f %F{#66D9EF}%~%f\$(git_info)
+%B%F{#F92672}╰─%f%b %F{#F92672}❯%f "
 
 # History configurations
 HISTFILE=~/.cache/zsh/history
